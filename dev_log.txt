@@ -1,0 +1,278 @@
+
+> hr-system@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.56.1:3000
+- Environments: .env.local
+✓ Ready in 812ms
+
+ HEAD / 307 in 387ms (next.js: 235ms, application-code: 151ms)
+ HEAD /login 200 in 101ms (next.js: 35ms, proxy.ts: 5ms, application-code: 61ms)
+ GET / 307 in 51ms (next.js: 3ms, application-code: 48ms)
+ GET /login 200 in 39ms (next.js: 4ms, proxy.ts: 4ms, application-code: 31ms)
+ GET / 307 in 406ms (next.js: 6ms, application-code: 399ms)
+ GET /login 200 in 250ms (next.js: 21ms, proxy.ts: 14ms, application-code: 214ms)
+⨯ Error: spawn UNKNOWN
+    at ignore-listed frames {
+  errno: -4094,
+  code: 'UNKNOWN',
+  syscall: 'spawn',
+  page: '/api/auth/session'
+}
+✓ Finished writing to filesystem cache in 21.6s
+ GET /api/auth/session 500 in 24.6s (next.js: 24.1s, application-code: 467ms)
+[browser] [next-auth][error][CLIENT_FETCH_ERROR] 
+https://next-auth.js.org/errors#client_fetch_error Unexpected token '<', "<!DOCTYPE "... is not valid JSON {
+  error: {
+    message: [32m`Unexpected token '<', "<!DOCTYPE "... is not valid JSON`[39m,
+    name: [32m'SyntaxError'[39m,
+    stack: [32m`SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON`[39m
+  },
+  message: [32m`Unexpected token '<', "<!DOCTYPE "... is not valid JSON`[39m,
+  url: [32m'/api/auth/session'[39m
+} 
+    at Object.error (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1149:17)
+    at _callee$ (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1182:47)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:496:26)
+    at Generator.<anonymous> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:320:63)
+    at Generator.next (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:269:29)
+    at asyncGeneratorStep (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:581:21)
+    at _next (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:593:17)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:598:13)
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:590:16)
+    at Object.error (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1214:33)
+    at _callee$ (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1328:28)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:496:26)
+    at Generator.<anonymous> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:320:63)
+    at Generator.throw (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:269:29)
+    at asyncGeneratorStep (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:581:21)
+    at _throw (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:596:17) (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1149:17)
+ POST /api/auth/_log 200 in 18.7s (next.js: 18.7s, application-code: 43ms)
+ GET / 307 in 255ms (next.js: 69ms, application-code: 186ms)
+ GET /login 200 in 209ms (next.js: 23ms, proxy.ts: 48ms, application-code: 138ms)
+✓ Finished writing to filesystem cache in 39.2s
+ GET /login 200 in 166ms (next.js: 13ms, proxy.ts: 21ms, application-code: 133ms)
+ GET /api/auth/session 200 in 125ms (next.js: 92ms, application-code: 33ms)
+ GET /api/auth/providers 200 in 134ms (next.js: 107ms, application-code: 27ms)
+ GET /api/auth/csrf 200 in 50ms (next.js: 5ms, application-code: 45ms)
+ POST /api/auth/callback/credentials 401 in 30.1s (next.js: 17ms, application-code: 30.1s)
+⨯ Failed to generate static paths for /api/auth/[...nextauth]:
+Error: spawn UNKNOWN
+    at ignore-listed frames {
+  errno: -4094,
+  code: 'UNKNOWN',
+  syscall: 'spawn'
+}
+ GET /api/auth/providers 200 in 4.2s (next.js: 1025ms, application-code: 3.2s)
+[browser] [next-auth][error][CLIENT_FETCH_ERROR] 
+https://next-auth.js.org/errors#client_fetch_error Failed to fetch {
+  error: {
+    message: [32m'Failed to fetch'[39m,
+    name: [32m'TypeError'[39m,
+    stack: [32m'TypeError: Failed to fetch\n'[39m +
+      [32m'    at _callee$ (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1311:28)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:496:26\n'[39m +
+      [32m'    at Generator.<anonymous> (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:320:63)\n'[39m +
+      [32m'    at Generator.next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:269:29)\n'[39m +
+      [32m'    at asyncGeneratorStep (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:581:21)\n'[39m +
+      [32m'    at _next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:593:17)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:598:13\n'[39m +
+      [32m'    at new Promise (<anonymous>)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:590:16\n'[39m +
+      [32m'    at fetchData (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1288:23)\n'[39m +
+      [32m'    at _callee5$ (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1613:49)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:496:26\n'[39m +
+      [32m'    at Generator.<anonymous> (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:320:63)\n'[39m +
+      [32m'    at Generator.next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:269:29)\n'[39m +
+      [32m'    at asyncGeneratorStep (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:581:21)\n'[39m +
+      [32m'    at _next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:593:17)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:598:13\n'[39m +
+      [32m'    at new Promise (<anonymous>)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:590:16\n'[39m +
+      [32m'    at getProviders (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1605:26)\n'[39m +
+      [32m'    at _callee6$ (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1636:28)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:496:26\n'[39m +
+      [32m'    at Generator.<anonymous> (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:320:63)\n'[39m +
+      [32m'    at Generator.next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:269:29)\n'[39m +
+      [32m'    at asyncGeneratorStep (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:581:21)\n'[39m +
+      [32m'    at _next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:593:17)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:598:13\n'[39m +
+      [32m'    at new Promise (<anonymous>)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:590:16\n'[39m +
+      [32m'    at signIn (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1625:20)\n'[39m +
+      [32m'    at handleLogin (http://localhost:3000/_next/static/chunks/src_02t8n_f._.js:187:191)\n'[39m +
+      [32m'    at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10329:13)\n'[39m +
+      [32m'    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)\n'[39m +
+      [32m'    at processDispatchQueue (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10355:41)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10633:13\n'[39m +
+      [32m'    at batchedUpdates$1 (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:2253:44)\n'[39m +
+      [32m'    at dispatchEventForPluginEventSystem (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10431:9)\n'[39m +
+      [32m'    at dispatchEvent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:13002:37)\n'[39m +
+      [32m'    at dispatchDiscreteEvent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:12984:64)'[39m
+  },
+  message: [32m'Failed to fetch'[39m,
+  url: [32m'/api/auth/providers'[39m
+} 
+    at Object.error (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1149:17)
+    at _callee$ (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1182:47)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:496:26)
+    at Generator.<anonymous> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:320:63)
+    at Generator.next (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:269:29)
+    at asyncGeneratorStep (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:581:21)
+    at _next (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:593:17)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:598:13)
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:590:16)
+    at Object.error (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1214:33)
+    at _callee$ (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1328:28)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:496:26)
+    at Generator.<anonymous> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:320:63)
+    at Generator.throw (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:269:29)
+    at asyncGeneratorStep (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:581:21)
+    at _throw (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:596:17) (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1149:17)
+ GET /login 200 in 45ms (next.js: 7ms, proxy.ts: 13ms, application-code: 24ms)
+ GET /api/auth/error 200 in 9.4s
+ GET /login 200 in 5.5s (next.js: 11ms, proxy.ts: 27ms, application-code: 5.4s)
+[browser] Failed to fetch RSC payload for http://localhost:3000/dashboard. Falling back to browser navigation. TypeError: Failed to fetch
+    at createFetch (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:8084:21)
+    at fetchServerResponse (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:7928:27)
+    at fetchMissingDynamicData (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:9341:75)
+    at spawnDynamicRequests (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:9149:35)
+    at navigateToKnownRoute (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:10033:54)
+    at refreshDynamicData (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:10653:49)
+    at refreshReducer (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:10627:12)
+    at clientReducer (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11394:59)
+    at Object.action (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11631:55)
+    at runAction (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11536:38)
+    at runRemainingActions (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11514:13)
+    at handleResult (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11552:9) (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:8005:21)
+[browser] Failed to fetch RSC payload for http://localhost:3000/dashboard. Falling back to browser navigation. TypeError: Failed to fetch
+    at createFetch (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:8084:21)
+    at fetchServerResponse (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:7928:27)
+    at navigateToUnknownRoute (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:10094:90)
+    at navigateImpl (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:9989:12)
+    at navigate (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:9953:12)
+    at navigateReducer (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:10530:37)
+    at clientReducer (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11382:61)
+    at Object.action (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11631:55)
+    at runAction (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11536:38)
+    at dispatchAction (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11599:9)
+    at Object.dispatch (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11629:40)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:963:29)
+    at startTransition (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:5469:31)
+    at nextDispatch (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:962:13)
+    at dispatchAppRouterAction (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:922:5)
+    at dispatchNavigateAction (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11688:49)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11782:13)
+    at startTransition (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:1279:31)
+    at Object.push (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11781:36)
+    at handleLogin (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/src_02t8n_f._.js:196:24) (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:8005:21)
+ GET /login 200 in 214ms (next.js: 12ms, proxy.ts: 17ms, application-code: 185ms)
+ GET /api/auth/session 200 in 2.9s (next.js: 2.8s, application-code: 55ms)
+ POST /api/auth/_log 200 in 13.3s (next.js: 13.3s, application-code: 61ms)
+ GET /api/auth/session 200 in 144ms (next.js: 124ms, application-code: 20ms)
+ GET /api/auth/providers 200 in 146ms (next.js: 132ms, application-code: 14ms)
+ GET /api/auth/csrf 200 in 29ms (next.js: 7ms, application-code: 22ms)
+ POST /api/auth/callback/credentials 401 in 22ms (next.js: 5ms, application-code: 17ms)
+ GET /api/auth/providers 200 in 50ms (next.js: 38ms, application-code: 12ms)
+ GET /api/auth/csrf 200 in 33ms (next.js: 6ms, application-code: 27ms)
+ POST /api/auth/callback/credentials 401 in 45ms (next.js: 7ms, application-code: 38ms)
+ GET /api/auth/providers 200 in 36ms (next.js: 4ms, application-code: 32ms)
+ GET /api/auth/csrf 200 in 31ms (next.js: 4ms, application-code: 27ms)
+ POST /api/auth/callback/credentials 401 in 36ms (next.js: 5ms, application-code: 32ms)
+ GET /api/auth/providers 200 in 118ms (next.js: 103ms, application-code: 15ms)
+ GET /api/auth/csrf 200 in 39ms (next.js: 7ms, application-code: 32ms)
+ POST /api/auth/callback/credentials 401 in 38ms (next.js: 6ms, application-code: 32ms)
+ GET /api/auth/providers 200 in 131ms (next.js: 113ms, application-code: 17ms)
+ GET /api/auth/csrf 200 in 38ms (next.js: 6ms, application-code: 32ms)
+ POST /api/auth/callback/credentials 401 in 22ms (next.js: 6ms, application-code: 16ms)
+ GET /api/auth/providers 200 in 39ms (next.js: 9ms, application-code: 30ms)
+ POST /api/auth/_log 200 in 1060ms (next.js: 1035ms, application-code: 24ms)
+ GET /api/auth/error 200 in 28ms (next.js: 6ms, application-code: 22ms)
+[browser] [next-auth][error][CLIENT_FETCH_ERROR] 
+https://next-auth.js.org/errors#client_fetch_error Failed to fetch {
+  error: {
+    message: [32m'Failed to fetch'[39m,
+    name: [32m'TypeError'[39m,
+    stack: [32m'TypeError: Failed to fetch\n'[39m +
+      [32m'    at _callee$ (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1311:28)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:496:26\n'[39m +
+      [32m'    at Generator.<anonymous> (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:320:63)\n'[39m +
+      [32m'    at Generator.next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:269:29)\n'[39m +
+      [32m'    at asyncGeneratorStep (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:581:21)\n'[39m +
+      [32m'    at _next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:593:17)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:598:13\n'[39m +
+      [32m'    at new Promise (<anonymous>)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:590:16\n'[39m +
+      [32m'    at fetchData (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1288:23)\n'[39m +
+      [32m'    at _callee5$ (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1613:49)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:496:26\n'[39m +
+      [32m'    at Generator.<anonymous> (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:320:63)\n'[39m +
+      [32m'    at Generator.next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:269:29)\n'[39m +
+      [32m'    at asyncGeneratorStep (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:581:21)\n'[39m +
+      [32m'    at _next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:593:17)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:598:13\n'[39m +
+      [32m'    at new Promise (<anonymous>)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:590:16\n'[39m +
+      [32m'    at getProviders (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1605:26)\n'[39m +
+      [32m'    at _callee6$ (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1636:28)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:496:26\n'[39m +
+      [32m'    at Generator.<anonymous> (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:320:63)\n'[39m +
+      [32m'    at Generator.next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:269:29)\n'[39m +
+      [32m'    at asyncGeneratorStep (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:581:21)\n'[39m +
+      [32m'    at _next (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:593:17)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:598:13\n'[39m +
+      [32m'    at new Promise (<anonymous>)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:590:16\n'[39m +
+      [32m'    at signIn (http://localhost:3000/_next/static/chunks/node_modules_00q4zof._.js:1625:20)\n'[39m +
+      [32m'    at handleLogin (http://localhost:3000/_next/static/chunks/src_02t8n_f._.js:187:191)\n'[39m +
+      [32m'    at executeDispatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10329:13)\n'[39m +
+      [32m'    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)\n'[39m +
+      [32m'    at processDispatchQueue (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10355:41)\n'[39m +
+      [32m'    at http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10633:13\n'[39m +
+      [32m'    at batchedUpdates$1 (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:2253:44)\n'[39m +
+      [32m'    at dispatchEventForPluginEventSystem (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10431:9)\n'[39m +
+      [32m'    at dispatchEvent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:13002:37)\n'[39m +
+      [32m'    at dispatchDiscreteEvent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:12984:64)'[39m
+  },
+  message: [32m'Failed to fetch'[39m,
+  url: [32m'/api/auth/providers'[39m
+} 
+    at Object.error (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1149:17)
+    at _callee$ (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1182:47)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:496:26)
+    at Generator.<anonymous> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:320:63)
+    at Generator.next (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:269:29)
+    at asyncGeneratorStep (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:581:21)
+    at _next (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:593:17)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:598:13)
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:590:16)
+    at Object.error (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1214:33)
+    at _callee$ (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1328:28)
+    at <unknown> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:496:26)
+    at Generator.<anonymous> (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:320:63)
+    at Generator.throw (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:269:29)
+    at asyncGeneratorStep (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:581:21)
+    at _throw (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:596:17) (file://C:/Users/Saifudeen/Downloads/hr management system/.next/dev/static/chunks/node_modules_00q4zof._.js:1149:17)
+ GET /login 200 in 29ms (next.js: 6ms, proxy.ts: 7ms, application-code: 15ms)
+ GET /api/auth/error 200 in 42ms (next.js: 4ms, application-code: 38ms)
+ GET /api/auth/error 200 in 14ms (next.js: 3ms, application-code: 10ms)
+ GET /api/auth/error 200 in 125ms (next.js: 105ms, application-code: 20ms)
+ GET /api/auth/error 200 in 153ms (next.js: 116ms, application-code: 37ms)
+ GET /api/auth/error 200 in 47ms (next.js: 6ms, application-code: 41ms)
+ GET /api/auth/error 200 in 42ms (next.js: 5ms, application-code: 37ms)
+ GET /login 200 in 182ms (next.js: 14ms, proxy.ts: 16ms, application-code: 151ms)
+ GET /api/auth/session 200 in 126ms (next.js: 106ms, application-code: 20ms)
+ GET /api/auth/providers 200 in 143ms (next.js: 116ms, application-code: 27ms)
+ GET /api/auth/csrf 200 in 34ms (next.js: 3ms, application-code: 31ms)
+ POST /api/auth/callback/credentials 401 in 24ms (next.js: 6ms, application-code: 18ms)
+ GET /api/auth/providers 200 in 43ms (next.js: 28ms, application-code: 16ms)
+ GET /api/auth/csrf 200 in 20ms (next.js: 4ms, application-code: 16ms)
+ POST /api/auth/callback/credentials 401 in 19ms (next.js: 6ms, application-code: 14ms)
+ GET /api/auth/providers 200 in 39ms (next.js: 8ms, application-code: 31ms)
+ GET /api/auth/csrf 200 in 46ms (next.js: 7ms, application-code: 40ms)
+ POST /api/auth/callback/credentials 401 in 30ms (next.js: 11ms, application-code: 20ms)
