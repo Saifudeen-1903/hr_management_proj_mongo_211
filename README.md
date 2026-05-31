@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern HR Management System 🚀
 
-## Getting Started
+A premium, full-stack HR Management System designed with modern design principles (glassmorphism, dark themes, and smooth animations) to streamline team operations. Built with **Next.js (App Router)**, **MongoDB**, and **Recharts**.
 
-First, run the development server:
+---
 
+## ✨ Features
+
+### 🔒 1. Secure Authentication & Authorization
+* Powered by **NextAuth.js** using encrypted credentials (bcryptjs).
+* Route protection via Next.js Middleware/Proxy—keeping the dashboard and employee tables secure.
+* **Role-Based Access Control (RBAC):** Different navigation paths and views for **Admins** and **Employees**.
+
+### 📊 2. Dynamic Admin Dashboard
+* **Key Statistics:** Total Employees count, Today's Attendance rate, and Pending Leave Requests.
+* **Interactive Charts:** Real-time data visualizations built with **Recharts** displaying daily attendance trends and department ratios.
+* Frosty glassmorphism statistic cards with smooth hover animations.
+
+### 👥 3. Employee Management
+* Interactive, responsive data tables displaying employee details, departments, roles, and statuses.
+* Add new employees instantly via a clean overlay modal form (powered by Base UI).
+
+### ⏱️ 4. Daily Attendance Module
+* **Employees:** One-click **Clock In** and **Clock Out** action widget. Automatically detects and labels "late" arrivals.
+* **Admins:** Complete organization-wide logs showing exact clock-in/out times and daily statuses.
+
+### 📅 5. Leave Request & Approval Workflow
+* **Employees:** Form to apply for Sick, Casual, or Annual leaves with custom dates and reasons.
+* **Admins:** Centralized management system with fast, click-to-approve/reject buttons that update the database dynamically.
+
+---
+
+## 🛠️ Tech Stack
+* **Framework:** Next.js (App Router, React)
+* **Database:** MongoDB (via Mongoose ODM)
+* **Authentication:** NextAuth.js
+* **Charts:** Recharts
+* **Styling:** Tailwind CSS, Base UI, Lucide Icons, Sonner Toasts
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+Ensure you have the following installed on your machine:
+* [Node.js (LTS version)](https://nodejs.org/)
+* [MongoDB](https://www.mongodb.com/) (running locally or a MongoDB Atlas cloud database connection URI)
+
+### 2. Clone and Install
+Clone this repository to your local system and install the dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Configure Environment Variables
+Create a file named `.env.local` in the root directory of the project and add the following:
+```env
+MONGODB_URI=mongodb://127.0.0.1:27017/hrms
+NEXTAUTH_SECRET=a_super_secret_key_change_in_production
+NEXTAUTH_URL=http://localhost:3000
+```
+*(Replace `MONGODB_URI` with your MongoDB connection string if you are using Atlas).*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Seed the Admin Account
+Run the database seeder to create the default Administrator account so you can log in:
+```bash
+npx tsx scripts/seed.ts
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 5. Run the Application
+Start the Next.js development server:
+```bash
+npm run dev
+```
 
-## Learn More
+Open **[http://localhost:3000](http://localhost:3000)** in your browser!
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔑 Default Credentials
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Use the default seeded credentials to explore the system:
 
-## Deploy on Vercel
+### Admin Account (HR Manager)
+* **Email:** `admin@hr.com`
+* **Password:** `admin123`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Repository Structure
+```text
+├── public/             # Static assets
+├── scripts/            # Database seeder scripts
+├── src/
+│   ├── app/            # Next.js App Router (Pages, layouts & APIs)
+│   ├── components/     # UI Components (Buttons, tables, cards, dialogs)
+│   ├── lib/            # Configuration utilities (Database connections, Auth options)
+│   ├── models/         # Mongoose Database schemas (User, Attendance, Leave)
+│   ├── types/          # TypeScript declarations (Next-Auth extensions)
+│   └── proxy.ts        # Next.js route protection proxy
+└── .env.local          # Private secrets (ignored by Git)
+```
